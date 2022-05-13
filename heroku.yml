@@ -2,3 +2,5 @@ build:
   docker:
     web: nginx/Dockerfile
     gotenberg: gotenberg/gotenberg:7
+run:
+  web: nginx -c /etc/nginx/nginx.conf
