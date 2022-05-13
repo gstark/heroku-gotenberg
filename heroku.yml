@@ -1,0 +1,4 @@
+build:
+  docker:
+    web: nginx/Dockerfile
+    gotenberg: gotenberg/gotenberg:7
