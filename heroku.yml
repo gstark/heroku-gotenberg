@@ -2,4 +2,4 @@ build:
   docker:
     web: app/Dockerfile
 run:
-  web: /bin/bash -c "(gotenberg --api-port 4000 &) && envsubst '\$PORT' < /tmp/nginx.subst.conf > /tmp/nginx.conf && nginx -c /tmp/nginx.conf -g 'daemon off;'"
+  web: (gotenberg --api-port 4000 &) && envsubst '\$PORT' < /tmp/nginx.subst.conf > /tmp/nginx.conf && nginx -c /tmp/nginx.conf -g 'daemon off;'

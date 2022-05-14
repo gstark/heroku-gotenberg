@@ -7,5 +7,5 @@ COPY nginx.subst.conf /tmp/nginx.subst.conf
 
 COPY --from=nginx /usr/sbin/nginx /usr/sbin/nginx
 
-ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT ["/bin/bash", "-c" ]
 CMD []
