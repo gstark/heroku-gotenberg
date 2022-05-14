@@ -1,3 +1,4 @@
 FROM gotenberg/gotenberg:7
 
-ENTRYPOINT [ "/usr/bin/tini", "-s", "--" ]
+#  tini [OPTIONS] PROGRAM -- [ARGS] | --version
+ENTRYPOINT [ "/usr/bin/tini", "-s", "gotenberg" ]
