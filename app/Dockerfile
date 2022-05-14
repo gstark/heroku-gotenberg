@@ -8,5 +8,5 @@ COPY nginx.subst.conf /home/gotenberg/nginx.subst.conf
 COPY --from=nginx /usr/sbin/nginx /usr/sbin/nginx
 COPY --from=nginx /usr/bin/envsubst /usr/bin/envsubst
 
-ENTRYPOINT ["/bin/bash", "-c" ]
+ENTRYPOINT ["/bin/bash", "-c"]
 CMD []
