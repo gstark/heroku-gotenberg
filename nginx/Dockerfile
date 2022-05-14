@@ -1,4 +1,4 @@
 FROM nginx
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.subst.conf /etc/nginx/nginx.subst.conf
 COPY password /etc/nginx/conf.d/default.htpasswd
