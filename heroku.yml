@@ -3,4 +3,4 @@ build:
     web: nginx/Dockerfile
     gotenberg: gotenberg/Dockerfile
 run:
-  web: /bin/bash -c "envsubst < /etc/nginx/nginx.subst.conf > /etc/nginx/nginx.conf && nginx -g 'daemon off;'"
+  web: /bin/bash -c "envsubst '$PORT' < /etc/nginx/nginx.subst.conf > /etc/nginx/nginx.conf && nginx -g 'daemon off;'"
