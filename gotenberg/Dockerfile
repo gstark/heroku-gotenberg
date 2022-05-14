@@ -1,3 +1,3 @@
 FROM gotenberg/gotenberg:7
 
-CMD [ "gotenberg", "-s" ]
+ENTRYPOINT [ "/usr/bin/tini", "--", "-s" ]
