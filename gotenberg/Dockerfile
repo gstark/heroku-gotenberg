@@ -1,3 +1,3 @@
 FROM gotenberg/gotenberg:7
 
-ENTRYPOINT [ "/usr/bin/tini", "--", "-s" ]
+ENTRYPOINT [ "/usr/bin/tini", "-s", "--" ]
