@@ -1,6 +1,6 @@
 build:
   docker:
     web: nginx/Dockerfile
-    gotenberg: gotenberg/gotenberg:7
+    gotenberg: gotenberg/Dockerfile
 run:
   web: nginx -c /etc/nginx/nginx.conf
