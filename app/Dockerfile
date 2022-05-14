@@ -7,5 +7,5 @@ COPY password /tmp/default.htpasswd
 
 COPY --from=nginx /usr/sbin/nginx /usr/sbin/nginx
 
-ENTRYPOINT [ "gotenberg", "--api-port", 
+ENTRYPOINT [ "/bin/bash" ]
 
